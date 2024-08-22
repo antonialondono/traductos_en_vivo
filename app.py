@@ -8,7 +8,8 @@ from streamlit_bokeh_events import streamlit_bokeh_events
 from PIL import Image
 import time
 import glob
-
+from gtts import gTTS
+from googletrans import Translator
 import cv2
 import numpy as np
 import pytesseract
@@ -35,7 +36,7 @@ if img_file_buffer is not None:
     st.write(text) 
 
     
-    text = str(result.get("GET_TEXT"))
+    
     in_lang = st.selectbox(
         "Selecciona el lenguaje de Entrada",
         ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
