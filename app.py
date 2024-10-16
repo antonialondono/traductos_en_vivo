@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 import pytesseract
 
-img_file_buffer = st.camera_input("Toma una Foto")
+img_file_buffer = st.camera_input("Toma una Foto a un texto")
 
 with st.sidebar:
       filtro = st.radio("Aplicar Filtro",('Con Filtro', 'Sin Filtro'))
